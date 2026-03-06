@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="GameFi 工具 - 收益计算器、对比工具 | GameFi 攻略站"
+  description="免费 GameFi 工具：收益计算器、投资回报率分析、游戏对比工具。帮助您做出明智的投资决策。"
+>
+  <div class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-bold mb-4 text-center">🛠️ GameFi 工具</h1>
+    <p class="text-xl text-gray-400 text-center mb-12">
+      免费实用的 GameFi 工具，助您最大化收益
+    </p>
+
+    <!-- 工具卡片 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- 收益计算器 -->
+      <div class="bg-gamefi-card rounded-xl p-6 border border-gray-800 hover:border-gamefi-accent transition">
+        <div class="text-4xl mb-4">💰</div>
+        <h2 class="text-2xl font-bold mb-3">GameFi 收益计算器</h2>
+        <p class="text-gray-400 mb-4">
+          计算您的潜在收益，包括每日/每月/每年回报，考虑代币价格波动。
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>✓ 支持多款热门游戏</li>
+          <li>✓ 实时代币价格</li>
+          <li>✓ ROI 分析</li>
+          <li>✓ 回本周期计算</li>
+        </ul>
+        <button class="w-full bg-gamefi-accent text-gamefi-dark py-3 rounded-lg font-bold hover:bg-cyan-400 transition" onclick="alert('开发中，敬请期待！')">
+          使用工具
+        </button>
+      </div>
+
+      <!-- 游戏对比 -->
+      <div class="bg-gamefi-card rounded-xl p-6 border border-gray-800 hover:border-gamefi-accent transition">
+        <div class="text-4xl mb-4">⚖️</div>
+        <h2 class="text-2xl font-bold mb-3">游戏对比工具</h2>
+        <p class="text-gray-400 mb-4">
+          对比不同 GameFi 项目的投资成本、收益潜力、风险等级。
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>✓ 多维度对比</li>
+          <li>✓ 风险评估</li>
+          <li>✓ 用户评价</li>
+          <li>✓ 推荐指数</li>
+        </ul>
+        <button class="w-full bg-gamefi-accent text-gamefi-dark py-3 rounded-lg font-bold hover:bg-cyan-400 transition" onclick="alert('开发中，敬请期待！')">
+          使用工具
+        </button>
+      </div>
+
+      <!-- 空投追踪 -->
+      <div class="bg-gamefi-card rounded-xl p-6 border border-gray-800 hover:border-gamefi-accent transition">
+        <div class="text-4xl mb-4">🎁</div>
+        <h2 class="text-2xl font-bold mb-3">空投追踪器</h2>
+        <p class="text-gray-400 mb-4">
+          追踪潜在空投机会，不错过任何免费代币分发。
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>✓ 实时空投信息</li>
+          <li>✓ 参与条件</li>
+          <li>✓ 截止日期提醒</li>
+          <li>✓ 历史空投数据</li>
+        </ul>
+        <button class="w-full bg-gamefi-accent text-gamefi-dark py-3 rounded-lg font-bold hover:bg-cyan-400 transition" onclick="alert('开发中，敬请期待！')">
+          使用工具
+        </button>
+      </div>
+
+      <!-- 钱包安全检测 -->
+      <div class="bg-gamefi-card rounded-xl p-6 border border-gray-800 hover:border-gamefi-accent transition">
+        <div class="text-4xl mb-4">🛡️</div>
+        <h2 class="text-2xl font-bold mb-3">钱包安全检测</h2>
+        <p class="text-gray-400 mb-4">
+          检查您的钱包授权，发现潜在安全风险。
+        </p>
+        <ul class="text-sm text-gray-500 space-y-2 mb-6">
+          <li>✓ 授权检查</li>
+          <li>✓ 风险评分</li>
+          <li>✓ 一键取消授权</li>
+          <li>✓ 安全建议</li>
+        </ul>
+        <button class="w-full bg-gamefi-accent text-gamefi-dark py-3 rounded-lg font-bold hover:bg-cyan-400 transition" onclick="alert('开发中，敬请期待！')">
+          使用工具
+        </button>
+      </div>
+    </div>
+
+    <!-- 工具开发计划 -->
+    <div class="mt-12 bg-gradient-to-r from-purple-900 to-blue-900 rounded-xl p-8">
+      <h2 class="text-2xl font-bold mb-4">🚀 更多工具即将上线</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
+          <h3 class="font-bold mb-2">📊 投资组合追踪</h3>
+          <p class="text-gray-400 text-sm">管理您的 GameFi 资产组合</p>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
+          <h3 class="font-bold mb-2">📈 代币价格提醒</h3>
+          <p class="text-gray-400 text-sm">设置价格预警，把握买卖时机</p>
+        </div>
+        <div class="bg-gray-800 bg-opacity-50 rounded-lg p-4">
+          <h3 class="font-bold mb-2">🎮 游戏推荐引擎</h3>
+          <p class="text-gray-400 text-sm">根据您的偏好推荐游戏</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 工具请求 -->
+    <div class="mt-8 bg-gamefi-card rounded-xl p-6 border border-gray-800">
+      <h2 class="text-xl font-bold mb-3">💡 需要什么工具？</h2>
+      <p class="text-gray-400 mb-4">
+        告诉我们您需要的工具，我们会优先开发！
+      </p>
+      <a href="mailto:contact@gamefi-blog.com" class="text-gamefi-accent hover:underline">
+        联系我们 →
+      </a>
+    </div>
+  </div>
+</BaseLayout>
