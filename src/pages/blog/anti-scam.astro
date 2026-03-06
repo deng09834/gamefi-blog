@@ -1,0 +1,243 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="GameFi 防骗指南 - GameFi 攻略站">
+  <article class="max-w-3xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">🛡️ GameFi 防骗指南</h1>
+      <div class="flex items-center gap-4 text-gray-400">
+        <span>📅 2026-03-06</span>
+        <span>👁️ 3.1k 阅读</span>
+        <span>📖 12 分钟阅读</span>
+      </div>
+    </header>
+
+    <div class="bg-gamefi-card rounded-xl p-8 prose prose-invert max-w-none">
+      <div class="bg-red-900 bg-opacity-30 border-l-4 border-red-500 p-6 mb-8">
+        <h3 class="text-xl font-bold text-red-400 mb-3">⚠️ 重要提示</h3>
+        <p class="text-gray-300">
+          GameFi 领域充斥着各种骗局，每年有数亿美元因诈骗而损失。
+          阅读本文可以帮助您识别和避免常见骗局，保护您的资金安全。
+        </p>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">一、常见骗局类型</h2>
+      
+      <div class="bg-gray-800 rounded-lg p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">🎣 钓鱼网站</h3>
+        <p class="text-gray-300 mb-4">
+          骗子创建与官方网站相似的钓鱼网站，诱导用户连接钱包并授权转账。
+        </p>
+        <div class="bg-red-900 bg-opacity-30 p-4 rounded-lg mb-4">
+          <h4 class="font-bold mb-2">典型案例：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• axie-inf1nity.com（仿冒 axieinfinity.com）</li>
+            <li>• stepn-official.com（仿冒 stepn.com）</li>
+            <li>• 通过 Google 广告推广钓鱼网站</li>
+          </ul>
+        </div>
+        <div class="bg-green-900 bg-opacity-30 p-4 rounded-lg">
+          <h4 class="font-bold text-green-400 mb-2">✅ 防范措施：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 始终通过官方 Discord/Twitter 链接访问</li>
+            <li>• 检查域名拼写是否正确</li>
+            <li>• 使用 Bookmark 保存常用网站</li>
+            <li>• 安装浏览器安全插件（如 Wallet Guard）</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">💬 假冒客服</h3>
+        <p class="text-gray-300 mb-4">
+          骗子在 Discord、Telegram 等社区冒充客服，主动联系用户"解决问题"，实则是骗取钱包权限。
+        </p>
+        <div class="bg-red-900 bg-opacity-30 p-4 rounded-lg mb-4">
+          <h4 class="font-bold mb-2">典型话术：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• "您好，我是客服，检测到您的账户异常"</li>
+            <li>• "需要您重新验证钱包，请点击链接"</li>
+            <li>• "限时活动，需要您授权领取奖励"</li>
+            <li>• "您的 NFT 有问题，需要转移修复"</li>
+          </ul>
+        </div>
+        <div class="bg-green-900 bg-opacity-30 p-4 rounded-lg">
+          <h4 class="font-bold text-green-400 mb-2">✅ 防范措施：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• <strong>官方客服不会主动私聊用户</strong></li>
+            <li>• 不要点击陌生人发送的链接</li>
+            <li>• 有问题主动通过官方渠道联系客服</li>
+            <li>• 开启 Discord 隐私设置，屏蔽陌生人消息</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">🪙 虚假空投</h3>
+        <p class="text-gray-300 mb-4">
+          骗子宣称有"免费空投"，诱导用户连接钱包、授权合约，最终盗取资金。
+        </p>
+        <div class="bg-red-900 bg-opacity-30 p-4 rounded-lg mb-4">
+          <h4 class="font-bold mb-2">典型特征：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 声称是"官方空投"，但来源不明</li>
+            <li>• 要求先支付"Gas 费"才能领取</li>
+            <li>• 授权请求包含转账权限</li>
+            <li>• 限时领取，制造紧迫感</li>
+          </ul>
+        </div>
+        <div class="bg-green-900 bg-opacity-30 p-4 rounded-lg">
+          <h4 class="font-bold text-green-400 mb-2">✅ 防范措施：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 只相信官方公告的空投</li>
+            <li>• 真正的空投不需要先付款</li>
+            <li>• 仔细检查授权权限，拒绝异常请求</li>
+            <li>• 使用 Revoke.cash 定期检查授权</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">🎮 土狗项目</h3>
+        <p class="text-gray-300 mb-4">
+          团队创建 GameFi 项目，短期炒作后跑路，投资者血本无归。
+        </p>
+        <div class="bg-red-900 bg-opacity-30 p-4 rounded-lg mb-4">
+          <h4 class="font-bold mb-2">危险信号：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 团队匿名，无历史项目经验</li>
+            <li>• 承诺过高收益（日收益>5%）</li>
+            <li>• 代币分配不合理（团队占比过高）</li>
+            <li>• 合约未审计，代码未开源</li>
+            <li>• 社区充斥着"何时上线""收益多少"的提问</li>
+            <li>• 营销投入远大于产品开发</li>
+          </ul>
+        </div>
+        <div class="bg-green-900 bg-opacity-30 p-4 rounded-lg">
+          <h4 class="font-bold text-green-400 mb-2">✅ 防范措施：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 调查团队背景和历史项目</li>
+            <li>• 查看代币经济模型是否可持续</li>
+            <li>• 确认合约已审计（CertiK、PeckShield 等）</li>
+            <li>• 小额测试，不要一次性投入</li>
+            <li>• 回本后及时提取本金</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-lg p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">💱 假交易所/兑换平台</h3>
+        <p class="text-gray-300 mb-4">
+          骗子创建假交易所或兑换平台，用户充值后无法提现。
+        </p>
+        <div class="bg-green-900 bg-opacity-30 p-4 rounded-lg">
+          <h4 class="font-bold text-green-400 mb-2">✅ 防范措施：</h4>
+          <ul class="space-y-1 text-gray-300 text-sm">
+            <li>• 只使用知名交易所（Binance、OKX、Bybit 等）</li>
+            <li>• 检查交易所是否有正规牌照</li>
+            <li>• 查看 CoinMarketCap 上的交易所排名</li>
+            <li>• 不要相信"零手续费""超高收益"的宣传</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">二、安全工具推荐</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h4 class="font-bold mb-2">🔒 钱包安全</h4>
+          <ul class="text-gray-300 text-sm space-y-1">
+            <li>• <strong>Wallet Guard</strong> - 钓鱼网站检测</li>
+            <li>• <strong>Scam Sniffer</strong> - 诈骗交易预警</li>
+            <li>• <strong>Blowfish</strong> - 交易风险扫描</li>
+          </ul>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h4 class="font-bold mb-2">🔍 授权管理</h4>
+          <ul class="text-gray-300 text-sm space-y-1">
+            <li>• <strong>Revoke.cash</strong> - 取消代币授权</li>
+            <li>• <strong>Etherscan</strong> - 检查授权记录</li>
+            <li>• <strong>DeBank</strong> - 资产和授权总览</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">三、安全最佳实践</h2>
+      <div class="bg-gradient-to-r from-blue-900 to-purple-900 rounded-lg p-6 mb-6">
+        <h3 class="font-bold mb-4">🛡️ 安全清单</h3>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>使用硬件钱包存储大额资金（Ledger、Trezor）</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>创建专用钱包用于 GameFi，与主钱包隔离</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>助记词离线保存，永不输入任何网站</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>定期检查并取消不必要的授权</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>开启所有可用的安全验证（2FA、邮箱验证等）</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>关注官方渠道，警惕虚假信息</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-green-400">✓</span>
+            <span>加入社区，及时了解诈骗动态</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">四、被骗后怎么办</h2>
+      <div class="bg-red-900 bg-opacity-30 border-l-4 border-red-500 p-6 mb-6">
+        <h3 class="font-bold text-red-400 mb-3">🚨 紧急措施</h3>
+        <ol class="space-y-3 text-gray-300">
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold">1.</span>
+            <span><strong>立即转移剩余资金</strong> - 如果钱包还有资产，马上转移到新钱包</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold">2.</span>
+            <span><strong>取消所有授权</strong> - 使用 Revoke.cash 取消所有代币授权</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold">3.</span>
+            <span><strong>收集证据</strong> - 保存交易记录、聊天截图等证据</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold">4.</span>
+            <span><strong>报警</strong> - 向当地警方报案，提供所有证据</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-red-400 font-bold">5.</span>
+            <span><strong>社区曝光</strong> - 在社区分享经历，提醒他人</span>
+          </li>
+        </ol>
+        <p class="text-gray-400 text-sm mt-4">
+          ⚠️ 注意：加密货币交易不可逆转，被骗后追回资金的可能性很低。
+          最重要的是做好预防，避免再次上当。
+        </p>
+      </div>
+
+      <div class="bg-gamefi-accent bg-opacity-10 border-l-4 border-gamefi-accent p-6">
+        <h3 class="font-bold mb-3">💡 核心原则</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li>1. <strong>永远不要相信陌生人</strong> - 尤其是主动联系你的"客服"</li>
+          <li>2. <strong>永远不要点击不明链接</strong> - 通过官方渠道访问网站</li>
+          <li>3. <strong>永远不要授权不明权限</strong> - 仔细检查授权内容</li>
+          <li>4. <strong>永远不要投入超过承受能力的资金</strong> - 做好损失准备</li>
+          <li>5. <strong>保持警惕</strong> - 如果感觉不对劲，立即停止操作</li>
+        </ul>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
