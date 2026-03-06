@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Axie Infinity 攻略 - GameFi 攻略站">
+  <article class="max-w-4xl mx-auto">
+    <header class="mb-8">
+      <div class="h-64 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl mb-6"></div>
+      <h1 class="text-4xl font-bold mb-4">🦊 Axie Infinity 完全攻略</h1>
+      <div class="flex flex-wrap gap-4 text-gray-400 mb-4">
+        <span>📅 更新时间：2026-03-06</span>
+        <span>🔗 RON 链</span>
+        <span>🎮 RPG/卡牌</span>
+        <span>💰 入门成本：~$100</span>
+      </div>
+    </header>
+
+    <div class="bg-gamefi-card rounded-xl p-8 space-y-8">
+      <!-- 游戏简介 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">📖 游戏简介</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Axie Infinity 是一款基于区块链的宠物对战游戏，玩家可以收集、培育、对战名为 Axie 的数码宠物。
+          游戏采用 Play-to-Earn 模式，玩家可以通过战斗、繁殖、交易等方式获得 SLP 和 AXS 代币奖励。
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">2018</div>
+            <div class="text-sm text-gray-400">上线时间</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">RON</div>
+            <div class="text-sm text-gray-400">区块链</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">SLP/AXS</div>
+            <div class="text-sm text-gray-400">代币</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">~$100</div>
+            <div class="text-sm text-gray-400">入门成本</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 新手入门 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">🚀 新手入门</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第一步：设置钱包</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>下载 Ronin Wallet 浏览器扩展</li>
+              <li>创建新钱包，安全保存助记词</li>
+              <li>从交易所转账 ETH 到 Ronin 钱包（用于购买 Axie）</li>
+            </ol>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第二步：购买 Axie</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>访问 Axie Marketplace (marketplace.axieinfinity.com)</li>
+              <li>连接 Ronin 钱包</li>
+              <li>浏览并选择喜欢的 Axie（建议新手买 3 只成体）</li>
+              <li>确认购买，等待交易完成</li>
+            </ol>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第三步：开始游戏</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>下载游戏客户端或访问网页版</li>
+              <li>用 Ronin 钱包登录</li>
+              <li>完成新手教程</li>
+              <li>开始冒险模式和竞技场战斗</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- 游戏机制 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">⚔️ 游戏机制</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">🎯 战斗系统</h3>
+            <p class="text-gray-300 text-sm">
+              3v3 回合制卡牌对战。每只 Axie 有 4 个技能卡牌，每回合抽 6 张牌，
+              使用卡牌消耗能量点。合理搭配职业和卡牌是获胜关键。
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">🧬 繁殖系统</h3>
+            <p class="text-gray-300 text-sm">
+              两只 Axie 可以繁殖后代，消耗 SLP 和 AXS。每只 Axie 最多繁殖 7 次，
+              繁殖次数越多成本越高。后代继承父母基因，可能产生稀有性状。
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">💰 收益来源</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• 冒险模式：每日完成任务获得 SLP</li>
+              <li>• 竞技场：PvP 胜利获得 SLP 奖励</li>
+              <li>• 繁殖：出售新生 Axie 获利</li>
+              <li>• 交易：低买高卖 Axie/NFT</li>
+              <li>• 质押：AXS 质押获得年化收益</li>
+            </ul>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">🏆 职业克制</h3>
+            <ul class="text-gray-300 text-sm space-y-2">
+              <li>• 野兽 → 克制 → 昆虫</li>
+              <li>• 昆虫 → 克制 → 植物</li>
+              <li>• 植物 → 克制 → 野兽</li>
+              <li>• 鸟类 → 克制 → 爬虫</li>
+              <li>• 爬虫 → 克制 → 鸟类</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 收益分析 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">💵 收益分析</h2>
+        <div class="bg-gradient-to-r from-green-900 to-emerald-900 rounded-lg p-6">
+          <h3 class="font-bold mb-4">日均收益估算（2026 年 3 月）</h3>
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div class="text-3xl font-bold text-green-400">~50 SLP</div>
+              <div class="text-sm text-gray-400">每日任务 + 竞技场</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-400">~$2-5</div>
+              <div class="text-sm text-gray-400">日收益（波动）</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-400">60-90 天</div>
+              <div class="text-sm text-gray-400">回本周期</div>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mt-4">
+            ⚠️ 收益会随代币价格、游戏活跃度波动，以上仅供参考
+          </p>
+        </div>
+      </section>
+
+      <!-- 风险提示 -->
+      <section class="bg-red-900 bg-opacity-30 border-l-4 border-red-500 p-6">
+        <h2 class="text-2xl font-bold mb-4 text-red-400">⚠️ 风险提示</h2>
+        <ul class="space-y-2 text-gray-300">
+          <li>• 代币价格波动大，可能亏损本金</li>
+          <li>• 游戏经济模型可能调整，影响收益</li>
+          <li>• 需要投入时间日常任务，否则收益下降</li>
+          <li>• 市场竞争激烈，新手需要学习成本</li>
+          <li>• 仅投入能承受损失的资金</li>
+        </ul>
+      </section>
+
+      <!-- 相关链接 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">🔗 相关链接</h2>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://axieinfinity.com" target="_blank" class="px-4 py-2 bg-gamefi-accent text-gamefi-dark rounded-lg font-bold hover:bg-cyan-400 transition">
+            官方网站
+          </a>
+          <a href="https://marketplace.axieinfinity.com" target="_blank" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
+            市场
+          </a>
+          <a href="https://roninchain.com" target="_blank" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
+            Ronin 钱包
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
