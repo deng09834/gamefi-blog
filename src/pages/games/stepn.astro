@@ -1,0 +1,213 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="StepN 攻略 - GameFi 攻略站">
+  <article class="max-w-4xl mx-auto">
+    <header class="mb-8">
+      <div class="h-64 bg-gradient-to-r from-green-600 to-emerald-600 rounded-xl mb-6"></div>
+      <h1 class="text-4xl font-bold mb-4">👟 StepN 完全攻略</h1>
+      <div class="flex flex-wrap gap-4 text-gray-400 mb-4">
+        <span>📅 更新时间：2026-03-06</span>
+        <span>🔗 Solana/BSC</span>
+        <span>🎮 运动/M2E</span>
+        <span>💰 入门成本：~$50-500</span>
+      </div>
+    </header>
+
+    <div class="bg-gamefi-card rounded-xl p-8 space-y-8">
+      <!-- 游戏简介 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">📖 游戏简介</h2>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          StepN 是一款 Move-to-Earn 运动赚币应用，用户通过跑步、步行等运动获得 GST/GMT 代币奖励。
+          需要购买 NFT 运动鞋才能开始，运动时自动记录步数和收益。
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">2021</div>
+            <div class="text-sm text-gray-400">上线时间</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">SOL/BSC</div>
+            <div class="text-sm text-gray-400">区块链</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">GST/GMT</div>
+            <div class="text-sm text-gray-400">代币</div>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-4 text-center">
+            <div class="text-2xl font-bold text-gamefi-accent">~$50+</div>
+            <div class="text-sm text-gray-400">入门成本</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 新手入门 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">🚀 新手入门</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第一步：下载应用</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>访问 stepn.com 下载官方 App</li>
+              <li>注册账号，完成邮箱验证</li>
+              <li>创建或导入 Solana 钱包</li>
+            </ol>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第二步：购买运动鞋</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>充值 SOL 到钱包（用于购买 NFT 和 Gas）</li>
+              <li>进入 Marketplace 浏览运动鞋</li>
+              <li>选择合适的鞋子（考虑类型、属性、效率）</li>
+              <li>确认购买，NFT 将转入钱包</li>
+            </ol>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-lg mb-3">第三步：开始运动</h3>
+            <ol class="list-decimal list-inside space-y-2 text-gray-300">
+              <li>打开 App，点击"Start"开始运动</li>
+              <li>户外跑步/步行（需要 GPS 定位）</li>
+              <li>运动结束后查看收益</li>
+              <li>每日有能量限制，合理分配运动时间</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- 运动鞋类型 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">👟 运动鞋类型</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-gamefi-accent mb-2">🏃 Walker（步行鞋）</h3>
+            <p class="text-gray-300 text-sm mb-2">适合速度：4-6 km/h</p>
+            <p class="text-gray-400 text-xs">适合日常散步，收益稳定但较低</p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-gamefi-accent mb-2">🏃 Jogger（慢跑鞋）</h3>
+            <p class="text-gray-300 text-sm mb-2">适合速度：4-10 km/h</p>
+            <p class="text-gray-400 text-xs">最常用类型，适合大多数人</p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-gamefi-accent mb-2">🏃 Runner（跑者鞋）</h3>
+            <p class="text-gray-300 text-sm mb-2">适合速度：8-20 km/h</p>
+            <p class="text-gray-400 text-xs">适合专业跑者，收益较高</p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold text-gamefi-accent mb-2">🏃 Trainer（训练鞋）</h3>
+            <p class="text-gray-300 text-sm mb-2">适合速度：1-20 km/h</p>
+            <p class="text-gray-400 text-xs">全能型，适合多种运动场景</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 属性系统 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">📊 属性系统</h2>
+        <div class="bg-gray-800 rounded-lg p-6">
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <h3 class="font-bold text-green-400 mb-2">Efficiency（效率）</h3>
+              <p class="text-gray-300 text-sm">影响 GST 产出量，越高收益越多</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-blue-400 mb-2">Luck（幸运）</h3>
+              <p class="text-gray-300 text-sm">影响掉落宝箱和特殊奖励的概率</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-purple-400 mb-2">Comfort（舒适）</h3>
+              <p class="text-gray-300 text-sm">影响能量恢复速度和上限</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-red-400 mb-2">Resilience（韧性）</h3>
+              <p class="text-gray-300 text-sm">减少鞋子耐久度损耗</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 收益分析 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">💵 收益分析</h2>
+        <div class="bg-gradient-to-r from-green-900 to-emerald-900 rounded-lg p-6">
+          <h3 class="font-bold mb-4">日均收益估算（2026 年 3 月）</h3>
+          <div class="grid grid-cols-3 gap-4 text-center">
+            <div>
+              <div class="text-3xl font-bold text-green-400">~10-30 GST</div>
+              <div class="text-sm text-gray-400">每日运动收益</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-400">~$1-5</div>
+              <div class="text-sm text-gray-400">日收益（波动）</div>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-green-400">30-60 天</div>
+              <div class="text-sm text-gray-400">回本周期</div>
+            </div>
+          </div>
+          <p class="text-gray-400 text-sm mt-4">
+            ⚠️ 收益受鞋子属性、运动时间、代币价格影响，以上仅供参考
+          </p>
+        </div>
+      </section>
+
+      <!-- 升级策略 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">📈 升级策略</h2>
+        <div class="space-y-4">
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">鞋子升级</h3>
+            <p class="text-gray-300 text-sm">
+              消耗 GST 提升鞋子等级（最高 30 级），每级随机增加属性点。
+              建议优先升级 Efficiency 属性，最大化收益。
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">宝石镶嵌</h3>
+            <p class="text-gray-300 text-sm">
+              达到一定等级后可镶嵌宝石，额外增加属性。
+              根据收益目标选择：收益流选 Efficiency，宝箱流选 Luck。
+            </p>
+          </div>
+          <div class="bg-gray-800 rounded-lg p-6">
+            <h3 class="font-bold mb-3">繁殖策略</h3>
+            <p class="text-gray-300 text-sm">
+              两只运动鞋可以繁殖后代，消耗 GST+GMT。
+              繁殖前计算成本，确保后代有市场价值。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 风险提示 -->
+      <section class="bg-red-900 bg-opacity-30 border-l-4 border-red-500 p-6">
+        <h2 class="text-2xl font-bold mb-4 text-red-400">⚠️ 风险提示</h2>
+        <ul class="space-y-2 text-gray-300">
+          <li>• 代币价格波动大，可能亏损本金</li>
+          <li>• 需要户外 GPS 运动，受天气和场地限制</li>
+          <li>• 能量系统限制每日收益上限</li>
+          <li>• 鞋子耐久度会损耗，需要维修</li>
+          <li>• 市场饱和可能导致 NFT 贬值</li>
+        </ul>
+      </section>
+
+      <!-- 相关链接 -->
+      <section>
+        <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">🔗 相关链接</h2>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://stepn.com" target="_blank" class="px-4 py-2 bg-gamefi-accent text-gamefi-dark rounded-lg font-bold hover:bg-cyan-400 transition">
+            官方网站
+          </a>
+          <a href="https://marketplace.stepn.com" target="_blank" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
+            市场
+          </a>
+          <a href="https://phantom.app" target="_blank" class="px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition">
+            Phantom 钱包
+          </a>
+        </div>
+      </section>
+    </div>
+  </article>
+</BaseLayout>
