@@ -1,114 +1,55 @@
 ---
-import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
-import BaseHead from '../../components/BaseHead.astro';
-import Footer from '../../components/Footer.astro';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
-
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			ul {
-				display: flex;
-				flex-wrap: wrap;
-				gap: 2rem;
-				list-style-type: none;
-				margin: 0;
-				padding: 0;
-			}
-			ul li {
-				width: calc(50% - 1rem);
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
-				text-align: center;
-			}
-			ul li:first-child img {
-				width: 100%;
-			}
-			ul li:first-child .title {
-				font-size: 2.369rem;
-			}
-			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h4,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			ul a:hover img {
-				box-shadow: var(--box-shadow);
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-				ul li:first-child {
-					margin-bottom: 0;
-				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<BaseLayout title="攻略文章 - GameFi 攻略站">
+  <h1 class="text-4xl font-bold mb-8 text-center">📝 攻略文章</h1>
+  
+  <!-- 分类筛选 -->
+  <div class="flex flex-wrap gap-4 mb-8 justify-center">
+    <button class="px-4 py-2 bg-gamefi-accent text-gamefi-dark rounded-lg font-bold">全部</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">新手指南</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">游戏攻略</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">收益策略</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">行业资讯</button>
+  </div>
+
+  <!-- 文章列表 -->
+  <div class="space-y-6">
+    <!-- 文章 1 -->
+    <article class="bg-gamefi-card rounded-xl p-6 hover:border-gamefi-accent border border-transparent transition">
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="w-full md:w-48 h-32 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex-shrink-0"></div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">GameFi 新手入门指南</h2>
+          <p class="text-gray-400 mb-4">从零开始了解 GameFi，包括钱包设置、游戏选择、收益策略等全方位指南。无论您是区块链新手还是资深玩家，都能在这里找到有用的信息。</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-4 text-sm text-gray-500">
+              <span>📅 2026-03-06</span>
+              <span>👁️ 1.2k 阅读</span>
+            </div>
+            <a href="/blog/getting-started" class="text-gamefi-accent hover:underline font-bold">阅读全文 →</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 文章 2 (占位) -->
+    <article class="bg-gamefi-card rounded-xl p-6 hover:border-gamefi-accent border border-transparent transition opacity-60">
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="w-full md:w-48 h-32 bg-gradient-to-br from-green-600 to-emerald-600 rounded-lg flex-shrink-0"></div>
+        <div class="flex-1">
+          <h2 class="text-2xl font-bold mb-3">如何选择优质 GameFi 项目</h2>
+          <p class="text-gray-400 mb-4">教你识别有潜力的链游项目，避开土狗和骗局。从团队背景、代币经济、游戏玩法等多个维度进行分析...</p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-4 text-sm text-gray-500">
+              <span>📅 即将发布</span>
+              <span>⏳ 准备中</span>
+            </div>
+            <span class="text-gamefi-accent font-bold">敬请期待</span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</BaseLayout>
