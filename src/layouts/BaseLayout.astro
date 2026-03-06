@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'GameFi 攻略站 - 最专业的链游指南' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gamefi-dark text-white min-h-screen">
+    <header class="bg-gamefi-card border-b border-gray-800">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-2xl font-bold text-gamefi-accent">
+            🎮 GameFi 攻略站
+          </a>
+          <div class="flex items-center gap-6">
+            <a href="/games" class="hover:text-gamefi-accent transition">游戏库</a>
+            <a href="/blog" class="hover:text-gamefi-accent transition">攻略</a>
+            <a href="/about" class="hover:text-gamefi-accent transition">关于</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="bg-gamefi-card border-t border-gray-800 mt-16">
+      <div class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-4">GameFi 攻略站</h3>
+            <p class="text-gray-400">最专业的链游指南，助您玩转 GameFi</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">快速链接</h3>
+            <ul class="space-y-2 text-gray-400">
+              <li><a href="/games" class="hover:text-gamefi-accent">游戏库</a></li>
+              <li><a href="/blog" class="hover:text-gamefi-accent">攻略文章</a></li>
+              <li><a href="/about" class="hover:text-gamefi-accent">关于我们</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold mb-4">联系我们</h3>
+            <p class="text-gray-400">Telegram: @gamefi_blog</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <p>&copy; 2026 GameFi 攻略站。All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
