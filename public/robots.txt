@@ -1,0 +1,21 @@
+# GameFi 攻略站 Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://gamefi-blog.com/sitemap-index.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Google bots
+User-agent: Googlebot
+Allow: /
+
+# Bing bots
+User-agent: Bingbot
+Allow: /
