@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="游戏库 - GameFi 攻略站">
+  <h1 class="text-4xl font-bold mb-8 text-center">🎮 游戏库</h1>
+  
+  <!-- 筛选器 -->
+  <div class="flex flex-wrap gap-4 mb-8 justify-center">
+    <button class="px-4 py-2 bg-gamefi-accent text-gamefi-dark rounded-lg font-bold">全部</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">RPG</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">策略</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">卡牌</button>
+    <button class="px-4 py-2 bg-gamefi-card border border-gray-700 rounded-lg hover:border-gamefi-accent transition">元宇宙</button>
+  </div>
+
+  <!-- 游戏网格 -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- 游戏 1 -->
+    <div class="bg-gamefi-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition">
+      <div class="h-48 bg-gradient-to-br from-purple-600 to-blue-600"></div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">Axie Infinity</h3>
+        <p class="text-gray-400 mb-4">经典链游，收集养成对战</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">RON</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">RPG</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">卡牌</span>
+        </div>
+        <a href="/games/axie-infinity" class="block text-center bg-gamefi-accent text-gamefi-dark py-2 rounded-lg font-bold hover:bg-cyan-400 transition">
+          查看详情
+        </a>
+      </div>
+    </div>
+
+    <!-- 游戏 2 -->
+    <div class="bg-gamefi-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition">
+      <div class="h-48 bg-gradient-to-br from-green-600 to-emerald-600"></div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">StepN</h3>
+        <p class="text-gray-400 mb-4">Move to Earn 健身赚币</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">Solana</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">运动</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">M2E</span>
+        </div>
+        <a href="#" class="block text-center bg-gamefi-accent text-gamefi-dark py-2 rounded-lg font-bold hover:bg-cyan-400 transition">
+          查看详情
+        </a>
+      </div>
+    </div>
+
+    <!-- 游戏 3 -->
+    <div class="bg-gamefi-card rounded-xl overflow-hidden hover:transform hover:scale-105 transition">
+      <div class="h-48 bg-gradient-to-br from-yellow-600 to-orange-600"></div>
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-2">The Sandbox</h3>
+        <p class="text-gray-400 mb-4">元宇宙沙盒游戏平台</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">ETH</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">元宇宙</span>
+          <span class="px-2 py-1 bg-gray-800 rounded text-xs">沙盒</span>
+        </div>
+        <a href="#" class="block text-center bg-gamefi-accent text-gamefi-dark py-2 rounded-lg font-bold hover:bg-cyan-400 transition">
+          查看详情
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
