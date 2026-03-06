@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="GameFi 新手入门指南 - GameFi 攻略站">
+  <article class="max-w-3xl mx-auto">
+    <header class="mb-8">
+      <h1 class="text-4xl font-bold mb-4">GameFi 新手入门指南</h1>
+      <div class="flex items-center gap-4 text-gray-400">
+        <span>📅 2026-03-06</span>
+        <span>👁️ 1.2k 阅读</span>
+        <span>📖 10 分钟阅读</span>
+      </div>
+    </header>
+
+    <div class="bg-gamefi-card rounded-xl p-8 prose prose-invert max-w-none">
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">什么是 GameFi？</h2>
+      <p class="text-gray-300 mb-6">
+        GameFi 是 Game 和 Finance 的结合，指基于区块链技术的游戏，玩家可以通过游戏获得加密货币或 NFT 奖励。
+        与传统游戏不同，GameFi 游戏中的资产真正属于玩家，可以在市场上交易。
+      </p>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">开始之前需要准备什么？</h2>
+      <div class="space-y-4 mb-6">
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">1. 加密货币钱包</h3>
+          <p class="text-gray-300">推荐使用 MetaMask（以太坊系）或 Phantom（Solana 系）。确保妥善保存助记词！</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">2. 起始资金</h3>
+          <p class="text-gray-300">根据游戏不同，可能需要购买 NFT 或代币。建议从小额开始，熟悉后再增加投入。</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">3. 学习心态</h3>
+          <p class="text-gray-300">GameFi 领域变化快，保持学习，关注项目动态和社区。</p>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">如何选择第一个游戏？</h2>
+      <ul class="space-y-3 text-gray-300 mb-6">
+        <li>✅ 选择知名度高、运营时间长的项目</li>
+        <li>✅ 查看代币经济模型是否可持续</li>
+        <li>✅ 加入社区了解真实玩家反馈</li>
+        <li>✅ 从小额投入开始，逐步增加</li>
+        <li>❌ 避免承诺过高收益的新项目</li>
+        <li>❌ 不要投入超过承受能力的资金</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-4 text-gamefi-accent">常见 GameFi 模式</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">Play to Earn (P2E)</h3>
+          <p class="text-gray-300 text-sm">通过游戏行为获得奖励，如 Axie Infinity</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">Move to Earn (M2E)</h3>
+          <p class="text-gray-300 text-sm">通过运动获得奖励，如 StepN</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">Learn to Earn (L2E)</h3>
+          <p class="text-gray-300 text-sm">通过学习获得奖励，如 Coinbase Earn</p>
+        </div>
+        <div class="bg-gray-800 rounded-lg p-4">
+          <h3 class="font-bold mb-2">Staking</h3>
+          <p class="text-gray-300 text-sm">质押代币获得收益</p>
+        </div>
+      </div>
+
+      <div class="bg-gamefi-accent bg-opacity-10 border-l-4 border-gamefi-accent p-4">
+        <p class="font-bold">⚠️ 风险提示</p>
+        <p class="text-gray-300">
+          GameFi 项目存在风险，包括代币价格波动、项目方跑路、智能合约漏洞等。
+          请务必做好自己的研究（DYOR），不要投入超过承受能力的资金。
+        </p>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
