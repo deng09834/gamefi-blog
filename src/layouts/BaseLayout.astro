@@ -2,16 +2,9 @@
 interface Props {
   title: string;
   description?: string;
-  image?: string;
-  canonicalURL?: string;
 }
 
-const { 
-  title, 
-  description = 'GameFi 攻略站 - 最专业的链游指南，提供 Axie Infinity、StepN 等热门游戏深度攻略和收益策略',
-  image = '/og-image.jpg',
-  canonicalURL = Astro.url?.href
-} = Astro.props;
+const { title, description = 'GameFi 攻略站 - 最专业的链游指南' } = Astro.props;
 ---
 
 <!doctype html>
@@ -20,42 +13,14 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <meta name="keywords" content="GameFi,链游，Axie Infinity,StepN,加密货币，NFT,Play to Earn,攻略，收益" />
-    <meta name="author" content="GameFi 攻略站" />
-    <link rel="canonical" href={canonicalURL} />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonicalURL} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:image" content={image} />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content={canonicalURL} />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={image} />
-    
-    <!-- Google Site Verification (待添加) -->
-    <!-- <meta name="google-site-verification" content="your-verification-code" /> -->
-    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.json" />
-    
     <title>{title}</title>
-    
-    <!-- Preconnect to external origins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body class="bg-gamefi-dark text-white min-h-screen flex flex-col">
-    <header class="bg-gamefi-card border-b border-gray-800 sticky top-0 z-50">
+  <body class="bg-gamefi-light text-gamefi-text min-h-screen">
+    <header class="bg-white border-b border-gamefi-border shadow-sm">
       <nav class="container mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
-          <a href="/" class="text-2xl font-bold text-gamefi-accent hover:opacity-80 transition">
+          <a href="/" class="text-2xl font-bold text-gamefi-accent">
             🎮 GameFi 攻略站
           </a>
           <div class="flex items-center gap-6">
@@ -68,49 +33,49 @@ const {
       </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-8 flex-grow">
+    <main class="container mx-auto px-4 py-8">
       <slot />
     </main>
 
-    <footer class="bg-gamefi-card border-t border-gray-800 mt-16">
+    <footer class="bg-gamefi-card border-t border-gamefi-border mt-16">
       <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-lg font-bold mb-4">🎮 GameFi 攻略站</h3>
-            <p class="text-gray-400 text-sm leading-relaxed">
+            <h3 class="text-lg font-bold mb-4 text-gamefi-text">🎮 GameFi 攻略站</h3>
+            <p class="text-gamefi-muted text-sm leading-relaxed">
               最专业的链游指南平台，提供深度游戏攻略、收益策略和行业资讯。
             </p>
           </div>
           <div>
-            <h3 class="text-lg font-bold mb-4">游戏库</h3>
-            <ul class="space-y-2 text-gray-400 text-sm">
+            <h3 class="text-lg font-bold mb-4 text-gamefi-text">游戏库</h3>
+            <ul class="space-y-2 text-gamefi-muted text-sm">
               <li><a href="/games/axie-infinity" class="hover:text-gamefi-accent">Axie Infinity</a></li>
               <li><a href="/games/stepn" class="hover:text-gamefi-accent">StepN</a></li>
               <li><a href="/games" class="hover:text-gamefi-accent">查看全部 →</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="text-lg font-bold mb-4">热门攻略</h3>
-            <ul class="space-y-2 text-gray-400 text-sm">
+            <h3 class="text-lg font-bold mb-4 text-gamefi-text">热门攻略</h3>
+            <ul class="space-y-2 text-gamefi-muted text-sm">
               <li><a href="/blog/earning-strategy" class="hover:text-gamefi-accent">收益最大化策略</a></li>
               <li><a href="/blog/anti-scam" class="hover:text-gamefi-accent">防骗指南</a></li>
               <li><a href="/blog/getting-started" class="hover:text-gamefi-accent">新手入门</a></li>
             </ul>
           </div>
           <div>
-            <h3 class="text-lg font-bold mb-4">联系我们</h3>
-            <ul class="space-y-2 text-gray-400 text-sm">
+            <h3 class="text-lg font-bold mb-4 text-gamefi-text">联系我们</h3>
+            <ul class="space-y-2 text-gamefi-muted text-sm">
               <li>📧 contact@gamefi-blog.com</li>
               <li>💬 @gamefi_blog</li>
               <li><a href="/about" class="text-gamefi-accent hover:underline">更多联系方式 →</a></li>
             </ul>
           </div>
         </div>
-        <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-gray-400 text-sm">
+        <div class="border-t border-gamefi-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-gamefi-muted text-sm">
             &copy; 2026 GameFi 攻略站。All rights reserved.
           </p>
-          <div class="flex gap-6 text-sm text-gray-400">
+          <div class="flex gap-6 text-sm text-gamefi-muted">
             <a href="/privacy" class="hover:text-gamefi-accent">隐私政策</a>
             <a href="/terms" class="hover:text-gamefi-accent">使用条款</a>
             <a href="/disclaimer" class="hover:text-gamefi-accent">免责声明</a>
@@ -118,19 +83,5 @@ const {
         </div>
       </div>
     </footer>
-    
-    <!-- Structured Data for SEO -->
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "GameFi 攻略站",
-      "url": "https://gamefi-blog.com",
-      "description": "最专业的链游指南平台",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://gamefi-blog.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    })} />
   </body>
 </html>
