@@ -8,77 +8,109 @@ const { title, description = 'GameFi 攻略站 - 最专业的链游指南' } = A
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- 引入更加现代的字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>{title}</title>
+    <style is:global>
+      :root {
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+      body {
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+      }
+    </style>
   </head>
-  <body class="bg-gamefi-light text-gamefi-text min-h-screen">
-    <header class="bg-white border-b border-gamefi-border shadow-sm">
-      <nav class="container mx-auto px-4 py-4">
-        <div class="flex items-center justify-between">
-          <a href="/" class="text-2xl font-bold text-gamefi-accent">
-            🎮 GameFi 攻略站
-          </a>
-          <div class="flex items-center gap-6">
-            <a href="/games" class="hover:text-gamefi-accent transition font-medium">游戏库</a>
-            <a href="/blog" class="hover:text-gamefi-accent transition font-medium">攻略</a>
-            <a href="/tools" class="hover:text-gamefi-accent transition font-medium">工具</a>
-            <a href="/about" class="hover:text-gamefi-accent transition font-medium">关于</a>
-          </div>
+  <body class="bg-[#FCFDFF] text-slate-900 min-h-screen selection:bg-blue-100 selection:text-blue-900">
+    <!-- 导航栏：极简、高亮、逻辑清晰 -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <nav class="container mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-2 text-2xl font-black text-slate-900 tracking-tighter">
+          <span class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center text-white text-xl shadow-lg shadow-blue-200">G</span>
+          GameFi <span class="text-blue-600 font-extrabold">HUB</span>
+        </a>
+        
+        <div class="hidden md:flex items-center gap-10">
+          <a href="/games" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition-colors uppercase tracking-widest">游戏库</a>
+          <a href="/blog" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition-colors uppercase tracking-widest">深度攻略</a>
+          <a href="/tools" class="text-sm font-bold text-slate-600 hover:text-blue-600 transition-colors uppercase tracking-widest">计算工具</a>
+          <a href="/about" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-xl hover:bg-slate-800 transition-all shadow-md">关于我们</a>
         </div>
+
+        <!-- 移动端菜单按钮 (示意) -->
+        <button class="md:hidden p-2 text-slate-600">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
       </nav>
     </header>
 
-    <main class="container mx-auto px-4 py-8">
+    <main class="container mx-auto px-6 py-12 md:py-20">
       <slot />
     </main>
 
-    <footer class="bg-gamefi-card border-t border-gamefi-border mt-16">
-      <div class="container mx-auto px-4 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div>
-            <h3 class="text-lg font-bold mb-4 text-gamefi-text">🎮 GameFi 攻略站</h3>
-            <p class="text-gamefi-muted text-sm leading-relaxed">
-              最专业的链游指南平台，提供深度游戏攻略、收益策略和行业资讯。
+    <!-- 页脚：整洁、专业 -->
+    <footer class="bg-white border-t border-slate-100 pt-20 pb-10">
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-1">
+            <a href="/" class="flex items-center gap-2 text-2xl font-black text-slate-900 tracking-tighter mb-6">
+              <span class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-lg">G</span>
+              GameFi HUB
+            </a>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">
+              致力于为 Web3 玩家提供最客观、最深度、最实用的链游资讯与工具。
             </p>
+            <div class="flex gap-4">
+              <a href="#" class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition">𝕏</a>
+              <a href="#" class="w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 hover:bg-blue-600 hover:text-white transition">💬</a>
+            </div>
           </div>
+          
           <div>
-            <h3 class="text-lg font-bold mb-4 text-gamefi-text">游戏库</h3>
-            <ul class="space-y-2 text-gamefi-muted text-sm">
-              <li><a href="/games/axie-infinity" class="hover:text-gamefi-accent">Axie Infinity</a></li>
-              <li><a href="/games/stepn" class="hover:text-gamefi-accent">StepN</a></li>
-              <li><a href="/games" class="hover:text-gamefi-accent">查看全部 →</a></li>
+            <h4 class="text-slate-900 font-black uppercase text-xs tracking-widest mb-6">快速链接</h4>
+            <ul class="space-y-4 text-sm text-slate-500 font-medium">
+              <li><a href="/games" class="hover:text-blue-600 transition">探索新游戏</a></li>
+              <li><a href="/blog" class="hover:text-blue-600 transition">最新实战攻略</a></li>
+              <li><a href="/tools" class="hover:text-blue-600 transition">收益计算模型</a></li>
+              <li><a href="/blog/seo-guide" class="hover:text-blue-600 transition">网站 SEO 指南</a></li>
             </ul>
           </div>
+
           <div>
-            <h3 class="text-lg font-bold mb-4 text-gamefi-text">热门攻略</h3>
-            <ul class="space-y-2 text-gamefi-muted text-sm">
-              <li><a href="/blog/earning-strategy" class="hover:text-gamefi-accent">收益最大化策略</a></li>
-              <li><a href="/blog/anti-scam" class="hover:text-gamefi-accent">防骗指南</a></li>
-              <li><a href="/blog/getting-started" class="hover:text-gamefi-accent">新手入门</a></li>
+            <h4 class="text-slate-900 font-black uppercase text-xs tracking-widest mb-6">热门分类</h4>
+            <ul class="space-y-4 text-sm text-slate-500 font-medium">
+              <li><a href="#" class="hover:text-blue-600 transition">Move to Earn</a></li>
+              <li><a href="#" class="hover:text-blue-600 transition">MMORPG</a></li>
+              <li><a href="#" class="hover:text-blue-600 transition">Card Games</a></li>
+              <li><a href="#" class="hover:text-blue-600 transition">Metaverse</a></li>
             </ul>
           </div>
+
           <div>
-            <h3 class="text-lg font-bold mb-4 text-gamefi-text">联系我们</h3>
-            <ul class="space-y-2 text-gamefi-muted text-sm">
-              <li>📧 contact@gamefi-blog.com</li>
-              <li>💬 @gamefi_blog</li>
-              <li><a href="/about" class="text-gamefi-accent hover:underline">更多联系方式 →</a></li>
-            </ul>
+            <h4 class="text-slate-900 font-black uppercase text-xs tracking-widest mb-6">订阅快报</h4>
+            <p class="text-slate-500 text-xs leading-relaxed mb-4">每周一封邮件，掌握最新链游动态。</p>
+            <div class="flex gap-2">
+              <input type="email" placeholder="Email" class="w-full px-4 py-2 bg-slate-50 border border-slate-100 rounded-lg text-xs focus:outline-none focus:border-blue-300 transition" />
+              <button class="px-4 py-2 bg-blue-600 text-white rounded-lg text-xs font-bold hover:bg-blue-700 transition">订阅</button>
+            </div>
           </div>
         </div>
-        <div class="border-t border-gamefi-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p class="text-gamefi-muted text-sm">
-            &copy; 2026 GameFi 攻略站。All rights reserved.
+        
+        <div class="border-t border-slate-50 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+          <p class="text-slate-400 text-xs">
+            &copy; 2026 GameFi HUB. 版权所有。 投资有风险，入市需谨慎。
           </p>
-          <div class="flex gap-6 text-sm text-gamefi-muted">
-            <a href="/privacy" class="hover:text-gamefi-accent">隐私政策</a>
-            <a href="/terms" class="hover:text-gamefi-accent">使用条款</a>
-            <a href="/disclaimer" class="hover:text-gamefi-accent">免责声明</a>
+          <div class="flex gap-8 text-xs text-slate-400 font-medium">
+            <a href="#" class="hover:text-slate-900 transition">隐私协议</a>
+            <a href="#" class="hover:text-slate-900 transition">免责声明</a>
           </div>
         </div>
       </div>
