@@ -17,14 +17,16 @@ export default {
           900: '#0c4a6e',
         },
         gamefi: {
-          dark: '#0f0f23',
-          card: '#1a1a2e',
-          accent: '#00d4ff',
-          gold: '#ffd700',
+          light: '#ffffff',
+          card: '#f8fafc',
+          accent: '#3b82f6',
+          gold: '#f59e0b',
+          border: '#e2e8f0',
+          text: '#1e293b',
+          muted: '#64748b'
         }
       },
     },
   },
   plugins: [],
-  darkMode: 'class',
 }
