@@ -1,7 +1,8 @@
 {
   "name": "gamefi-blog",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "GameFi 攻略站 - 最专业的链游指南",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,7 +13,10 @@
     "@astrojs/mdx": "^4.3.13",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/tailwind": "^6.0.0",
     "astro": "^5.17.1",
-    "sharp": "^0.34.3"
+    "sharp": "^0.34.3",
+    "tailwindcss": "^3.4.0",
+    "date-fns": "^4.1.0"
   }
 }
